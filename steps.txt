@@ -1,0 +1,2 @@
+1. Bootstrap\start.php -> environments
+2. Configurations

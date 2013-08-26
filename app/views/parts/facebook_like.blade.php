@@ -1,0 +1,1 @@
+<div class="fb-like" data-href="{{ Request::url() }}" data-width="450" data-show-faces="true" data-send="true"></div>

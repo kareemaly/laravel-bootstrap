@@ -1,0 +1,8 @@
+/bootstrap/compiled.php
+/vendor
+/public
+/.idea
+/freak
+composer.phar
+composer.lock
+.DS_Store

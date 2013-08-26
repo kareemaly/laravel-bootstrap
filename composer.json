@@ -1,0 +1,49 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"require": {
+		"laravel/framework": "4.0.*",
+
+        "intervention/image": "dev-master",
+
+        "kareem3d/asset": "dev-master",
+        "kareem3d/path-manager": "dev-master",
+        "kareem3d/captcha": "dev-master",
+        "kareem3d/tracking": "dev-master",
+        "kareem3d/helper": "dev-master"
+	},
+    "require-dev": {
+
+        "Zizaco/factory-muff": "dev-master",
+        "mockery/mockery": "dev-master@dev"
+    },
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
